@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="load.css">
+        <title>Hartal</title>
+</head><body onload="myFunction()" style="margin:0;">
+
+  <div id="loader">
+    <ul>
+      <li>H</li>
+      <li>A</li>
+      <li>R</li>
+      <li>T</li>
+      <li>A</li>
+      <li>L</li>
+    </ul>
+  </div>
+  
+  <div style="display:none;" id="myDiv" class="animate-bottom">
+<div class="showcase">
+    <div class="container">
+        <div id="navbar">
+          <h1>Hartal</h1>
+        </div>
+    </div>
+</div>
+    
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 box">
+      <div class="well">
+        <span class="glyphicon glyphicon-phone"></span>
+        <h3>Sabarimala</h3>
+        <p>Monday is a Harthal!
+          Tomorrow is a harthal! The Sabarimala strike will result in All Kerala shutdown<span id="dots">..</span>. <span id="more">
+            Big worries for school and Institutions as they will remain open, along with public transportation as Highcourt issues order.</span>
+        </p>
+        <button onclick="myFunction()" id="myBtn" class="btn btn-primary">Read more</button>
+      </div>
+    </div>
+    <div class="col-md-4 box">
+      <div class="well">
+        <span class="glyphicon glyphicon-search"></span>
+        <h3>All India Motor vechicle strike </h3>
+        <p>'Vehicles, including private buses, autorickshaws, taxis, freight vehicles and most of the KSRTC buses,<span id="dots">...</span> <span id="more">will stay off the road on Tuesday as part of the
+           one-day strike organised by the All India Motor Transport Organisation, demanding the withdrawal of the proposed Motor Vehicle (MV) Amendment Bill.</span>
+        </p>
+        <button onclick="myFunction()" id="myBtn" class="btn btn-primary">Read more</button>
+      </div>
+    </div>
+    <div class="col-md-4 box">
+      <div class="well">
+        <span class="glyphicon glyphicon-search"></span>
+        <h3>All India Motor vechicle strike </h3>
+        <p>'Vehicles, including private buses, autorickshaws, taxis, freight vehicles and most of the KSRTC buses,<span id="dots">...</span> <span id="more">will stay off the road on Tuesday as part of the
+          one-day strike organised by the All India Motor Transport Organisation, demanding the withdrawal of the proposed Motor Vehicle (MV) Amendment Bill.</span>
+       </p>
+        <button onclick="myFunction()" id="myBtn" class="btn btn-primary">Read more</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+  <footer>
+    
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Hartal.<span style="color:lightblue" >ML</span></a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li ><a href="#">Home</a></li>
+          <li><a href="#">Page 1</a></li>
+          <li><a href="#">Page 2</a></li>
+          <li><a href="#">Page 3</a></li>
+        </ul>
+      </div>
+
+    </nav>
+  </footer>
+
+  </div>
+
+<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-400px";
+  }
+  prevScrollpos = currentScrollPos;
+  if(previousScrollPos > currentScrollPos)
+  {
+    document.getElementById("navbar").style.bottom= "-400px";
+  }
+}
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 5000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+
+</body>
+</html>
