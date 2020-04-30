@@ -33,7 +33,13 @@
     <div class="container">
         <div id="navbar">
           <h1>Hartal</h1>
+        
           <span class="glyphicon glyphicon-menu"></span>
+    
+        </div>
+        <div class="aaa">
+          <span id="result" class="glyphicon glyphicon-user"></span>
+          <p><button onclick="clickCounter()" type="button" class="btn btn-primary">Follow Us</button></p>
         </div>
     </div>
 </div>
@@ -266,9 +272,20 @@ function showPage() {
   document.getElementById("loader").style.display = "none";
   document.getElementById("myDiv").style.display = "block";
 }
+function clickCounter() {
+  if (typeof(Storage) !== "undefined") {
+    if (localStorage.clickcount) {
+      localStorage.clickcount = Number(localStorage.clickcount)+1;
+    } else {
+      localStorage.clickcount = 1;
+    }
+    document.getElementById("result").innerHTML =   "  " +localStorage.clickcount ;
+  } else {
+    document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+  }
+}
 
 </script>
 
 </body>
 </html>
-

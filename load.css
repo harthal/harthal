@@ -78,3 +78,32 @@
 .a-100 {
     width:auto; 
 }
+.aaa{
+    background-color: #fee0d5;
+    border-radius: 25px;
+    width: 50%;
+    height: 150px;
+    position:relative;
+    margin-left: 275px;
+    margin-top: -75px;
+    overflow: visible;
+}
+
+@media screen and (max-width:480px){
+	.aaa{margin-left:35px;width:80%;height: 100px;margin-top: -50px;}	
+}
+.btn-primary{
+    margin-top: 50px;
+    margin-left: 1px;
+}
+
+.btn{
+    margin-left: 10px;
+    float: left;
+}
+#result{
+   position: absolute;
+   top:25px;
+   right: 83%;
+}
+
