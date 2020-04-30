@@ -7,6 +7,7 @@
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" type="text/css" href="load.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <title>Hartal</title>
 </head><body onload="myFunction()" style="margin:0;">
 
@@ -26,6 +27,7 @@
     <div class="container">
         <div id="navbar">
           <h1>Hartal</h1>
+          <span class="glyphicon glyphicon-menu"></span>
         </div>
     </div>
 </div>
@@ -165,10 +167,13 @@ function myFunction() {
 }
 
 function showPage() {
+  
   document.getElementById("loader").style.display = "none";
   document.getElementById("myDiv").style.display = "block";
 }
+
 </script>
 
 </body>
 </html>
+
