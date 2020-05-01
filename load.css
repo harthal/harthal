@@ -57,7 +57,7 @@
 }
 
 .b{
-    background-color: #1f0d3c;
+    background-color: #fee0d5;
     color: white;
     border-radius: 25px;
     margin-right: 10px;
@@ -67,7 +67,7 @@
 
 }
 .a{
-    background-color: #fec868;
+    background-color: #53afee;
     color: black;
     border-radius: 25px;
     margin-right: 10px;
@@ -79,16 +79,18 @@
     width:auto; 
 }
 .aaa{
-    background-color: #fee0d5;
+    background-color: white;
     border-radius: 25px;
     width: 50%;
     height: 150px;
     position:absolute;
     right: 26%;
     top:35%;
+    align-items: center;
     margin-left: 275px;
     margin-top: -75px;
     overflow: visible;
+	box-shadow: 0px 10px 5px grey;
 }
 
 @media screen and (max-width:480px; max-height:633.6px; ){
@@ -106,7 +108,7 @@
 #result{
    position: absolute;
    top:25px;
-   right: 83%;
+   right: 95%;
 }
 
 @media screen and (max-width:480px){
@@ -129,5 +131,5 @@
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
-    margin-top:10%;
+    margin-top:15%;
 }
