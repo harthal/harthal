@@ -28,26 +28,15 @@ body {
   font-size: 17px;
 }
 
-#navbar h1{
+ .assa{
   color:white;
   font-family:'Courier New';
   font-size: 50px;
   padding-top: 250px;
   text-align: center;
 }
-.buddy {
-  width: 50%;
-  height: 629px;
-  display: inline-block;
-  position: absolute;
-  background: red;
-}
 
-.buddy-content {
-  position: absolute;
-  z-index: 10;
-  background: blue;
-}
+
 
 #navbar a:hover {
   background-color: #ddd;
@@ -61,7 +50,7 @@ body {
   border-color:  #161625 ;
   color:white;
   margin-left:13px;
-  border-radius: 25px;
+
 }
 .navbar-nav{
 float: right;
