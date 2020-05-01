@@ -107,3 +107,18 @@
    right: 83%;
 }
 
+@media screen and (max-width:480px){
+    .navbar-nav{height: 40px;}
+    .navbar-nav ul{display: inline;}
+  
+}
+
+.navbar-brand {
+    float: left;
+    height: 50px;
+    margin-left: 1px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 18px;
+    line-height: 20px;
+}
