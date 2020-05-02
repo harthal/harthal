@@ -154,3 +154,109 @@ text-align: center;
   margin-right: auto;
   margin-left: auto;
 }
+.section-b {
+  padding: 20px 0 0 0;
+  margin-bottom: 0;
+}
+.box-a {
+  width: 25%;
+  height:30% ;
+  padding-right: 0px;
+  margin-right: 5px;
+  margin-top: 8px;
+  float: left;
+  text-align: center; 
+  background-color: #fec868;
+  
+}
+
+.box-b {
+  width: 24%;
+  height:30% ;
+  float: left;
+  margin-top: 8px;
+  margin-right: 5px;
+  color: white;
+  padding-right: 0px;
+  text-align: center; 
+  background-color:#1f0d3c;
+  
+}
+.box-c {
+  width: 24%;
+  height:30% ;
+  float: left;
+  margin-top: 8px;
+  margin-right: 5px;
+  padding-right: 0px;
+  text-align: center; 
+  background-color:#fec868;
+  
+}
+.box-d {
+  width: 24%;
+  height:30% ;
+  float: left;
+  margin-top: 8px;
+  padding-right:0px;
+  color: white;
+  margin-right: 5px;
+  text-align: center; 
+  background-color: #1f0d3c;
+  
+}
+.box-a:hover {
+  width: 24%;
+  height: 30%;
+  margin-right: 5px;
+  float: left;
+  margin-top: 8px;
+  text-align: center; 
+  background-color: #fdb73e;
+  
+}
+
+.box-b:hover {
+  width: 24%;
+  height:30% ;
+  float: left;
+  margin-top: 8px;
+  margin-right: 5px;
+  text-align: center; 
+  background-color: #fdb73e;
+  
+}
+.box-c:hover {
+  width: 24%;
+  height:30% ;
+  float: left;
+  margin-top: 8px;
+  margin-right: 4px;
+  text-align: center; 
+  background-color: #fdb73e;
+  
+}
+.box-d:hover {
+  width: 24%;
+  height:30% ;
+  float: left;
+  margin-top: 8px;
+  text-align: center;
+  margin-right: 5px;
+  background-color: #fdb73e;
+  
+}
+
+@media screen and (max-width:800px) {
+  .box-a,.box-b,.box-c,.box-d,.box-a:hover,.box-b:hover,.box-c:hover,.box-d:hover{
+    width: 40%;
+    height: 70%;
+    margin-right: 8px;
+    margin-left: 13px;
+    padding: 0 4px;
+    border-radius: 10px;
+    margin-bottom: 4px;
+    background-image: linear-gradient(to right,white,#fec868);
+    /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}

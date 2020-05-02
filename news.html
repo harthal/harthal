@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="load.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <title>Hartal</title>
+</head><body onload="myFunction()" style="margin:0;">
+
+  <div id="loader">
+    <ul>
+      <li>H</li>
+      <li>A</li>
+      <li>R</li>
+      <li>T</li>
+      <li>A</li>
+      <li>L</li>
+    </ul>
+  </div>
+  
+  <div style="display:none;" id="myDiv" class="animate-bottom">
+    <div class="container">
+      <div class="showcase" >
+        <div id="navbar">
+          <h1 class="assa">Hartal</h1>
+          <span class="glyphicon glyphicon-menu"></span>
+        </div>
+        <div class="aaa">
+          <span id="result" class="glyphicon glyphicon-user result" ></span>
+          <p><button onclick="clickCounter()" type="button" class="btn btn-warning" id="follow">Follow Us</button></p>
+        </div>
+    </div>
+</div>
+<div class="container">
+  <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pellentesque eu lacus sed pulvinar. Praesent pulvinar
+    molestie massa a ornare. Aenean tincidunt mauris nec ipsum viverra, vel lacinia purus laoreet. Pellentesque vulputate,
+    tortor eu molestie porta, justo nibh laoreet orci, ut elementum lorem augue non sapien. Sed blandit, lacus nec facilisis 
+    rutrum, nisl mi faucibus ante, a luctus lacus neque ac turpis. Quisque risus justo, interdum id ipsum molestie, auctor venenatis 
+    dolor. Integer molestie porttitor justo, sed aliquet sapien dignissim ut. Aenean pharetra, sapien vel ultrices cursus, enim ipsum 
+    vulputate metus, ac lobortis erat dolor sit amet nunc. Sed purus ipsum, molestie vitae turpis a, tempus dapibus erat.
+    Sed id porttitor libero. Proin congue mi turpis, a sollicitudin est ultrices in.
+  </p>
+</div>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+</div>
+<footer>
+  <div class="container">
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#" style="float: left; margin-left:1px; font-size: 20px;">Hartal</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li ><span style="font-size:15px;cursor:pointer" onclick="openNav()">&#9776; menu</span></li>
+      </ul>
+    </div>
+  </nav>
+  </div>
+</footer>
+
+<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-400px";
+  }
+  prevScrollpos = currentScrollPos;
+  
+}
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage,1000);
+}
+
+function showPage() {
+  
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+
+ 
+function clickCounter() {
+  var data=document.getElementById("follow").innerHTML; 
+  if(data=="Follow Us")
+  {
+  if (typeof(Storage) !== "undefined") {
+    if (localStorage.clickcount) {
+      localStorage.clickcount = Number(localStorage.clickcount)+1;
+    } else {
+      localStorage.clickcount = 1;
+    }
+    document.getElementById("result").innerHTML =   "  " +localStorage.clickcount ;
+  } else {
+    document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+  }
+
+    document.getElementById("follow").innerHTML="unfollow";
+  }
+  else{
+    if (typeof(Storage) !== "undefined") {
+    if (localStorage.clickcount) {
+      localStorage.clickcount = Number(localStorage.clickcount)-1;
+    } else {
+      localStorage.clickcount = 1;
+    }
+    document.getElementById("result").innerHTML =   "  " +localStorage.clickcount ;
+  } else {
+    document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+  }
+
+    document.getElementById("follow").innerHTML="Follow Us";
+  }
+}
+
+
+</script>
+
+</body>
+</html>SS
