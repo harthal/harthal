@@ -15,6 +15,13 @@
     display: flex;
 }
 
+
+.box {
+    width: 24%;
+    float: left;
+    text-align: center;
+}
+
 #loader ul li{
     list-style: none;
     color: white;
@@ -57,23 +64,25 @@
 }
 
 .b{
-    background-color: #fee0d5;
+  
     color: black;
     border-radius: 25px;
     margin-right: 10px;
     margin-top: 0px;
     margin-bottom: 30px;
     font-size: 18px;
+    background-image: linear-gradient(to left,yellowgreen,#fee0d5);
 
 }
 .a{
-    background-color: #53afee;
+    
     color: white;
     border-radius: 25px;
     margin-right: 10px;
     margin-top: 0px;
     margin-bottom: 30px;
     font-size: 18px;
+    background-image: linear-gradient(to left,crimson,#53afee);
 }
 
 .aaa{
@@ -164,4 +173,5 @@
 }
 .flex-xl-nowwrap{
     margin-top:1px;
+    flex-wrap: wrap !important;
 }
