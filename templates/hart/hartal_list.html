@@ -1,0 +1,12 @@
+{% extends "hart/base.html" %}
+{% block content %}
+<div class="container ">
+  {% for hartal in hartal_list %}
+  <div class="list">
+  <h1><a href="{% url 'hartal_detail' pk=hartal.pk %}">{{hartal.title}}</a></h1>
+  <p>{{hartal.type}}</p>
+  <time>{{published_date|date:"d-m-y"}}</time>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}
